@@ -1,0 +1,106 @@
+#todo{
+  background: #121314;
+}
+
+#cuerpo{
+  width: 95%;
+  margin: 0px auto;
+ }
+
+#toolbar {
+  display: block;
+  position: fixed;
+  width: 95%;
+  z-index: 10;
+  padding: 0 16px;
+  background-color: rgba(168, 55, 121, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+ /* -webkitt-linear-backdrop-filter: blur(10px);*/
+  -moz-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+}
+
+#actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 64px;
+  top: 0;
+  left: 0;
+ }
+
+#title {
+  padding: 21px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav.menu ul {
+  padding: 1px;
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  float:left;
+  list-style: none;
+  font-size:20px;
+  color:#fff;
+}
+
+nav.menu ul li {
+  float:left;
+}
+
+nav.menu ul a {
+  display:block;
+  padding:5px;
+  color:#fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+nav.menu ul a:hover {
+  background:rgba(241, 171, 226, 0.7);
+  color:#0d0d0e;
+  border-radius: 15px;
+}
+
+.tilutoresp {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .tilutoprinc {
+    display: none;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+  .tilutoresp {
+    display: block;
+    }
+  }
+
+@media screen and (max-width: 840px) {
+    .tilutoresp {
+      position: absolute;
+      top: -150px;
+      }
+    }
+@media screen and (max-width: 580px) {
+  .tilutoresp {
+    top: -55px;
+    left: 70px;
+	  }
+  }
+@media screen and (max-width: 580px) {
+  .menu {
+	  display: none;
+	  }
+  }
+  
